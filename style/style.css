@@ -1,0 +1,9 @@
+html {
+    border-style: border-box;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    font-family: Inter, sans-serif;
+}

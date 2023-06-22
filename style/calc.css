@@ -127,10 +127,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 20px;
 }
 .calc__result:last-child {
     margin-bottom: 0;
-}
-.calc__result-text {
 }

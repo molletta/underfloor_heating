@@ -23,7 +23,7 @@
     <main>
         <section class="hero section-offset">
             <div class="container hero__container">
-                <div class="hero__content">
+                <div class="hero__content gray-block">
                     <h2 class="hero__title">Приносим тепло в&nbsp;каждый дом</h2>
                     <p class="hero__description">Устанавливаем теплые полы в&nbsp;квартирах, офисах и&nbsp;загородных домах.</p>
                     <a href="#calc" class="button link hero__link">Рассчитать&nbsp;стоимость</a>
@@ -57,6 +57,79 @@
         </section>
         <section class="calc section-offset" id="calc">
             <div class="container calc__container">
+                <div class="calc__content gray-block">
+                    <h2 class="calc__title">Рассчитайте стоимость</h2>
+                    <form class="calc__form"> <!--Форма калькулятора-->
+
+                        <fieldset class="calc__fieldset calc__fieldset_size"> <!--Размер-->
+                            <label class="calc__wrapper-input calc__wrapper-input-size">
+                                <span class="calc__text">Ширина помещения, м</span>
+                                <input 
+                                    class="calc__input-number" 
+                                    type="number" 
+                                    name="width" 
+                                    required 
+                                >
+                            </label>
+                            <label class="calc__wrapper-input calc__wrapper-input-size">
+                                <span class="calc__text">Длина помещения, м</span>
+                                <input 
+                                    class="calc__input-number" 
+                                    type="number" 
+                                    name="length" 
+                                    required
+                                >
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="calc__fieldset calc__fieldset_tariff"> <!--Тариф-->
+                            <legend class="calc__text calc__text_legend">Тариф</legend>
+                            <label class="calc__wrapper-input calc__wrapper-input-tariff">
+                                <input 
+                                    class="calc__input-radio" 
+                                    type="radio" 
+                                    name="tariff" 
+                                    value="economy"
+                                >
+                                <span class="calc__label-radio">Эконом</span>
+                            </label>
+                            <label class="calc__wrapper-input calc__wrapper-input-tariff">
+                                <input 
+                                    class="calc__input-radio" 
+                                    type="radio" 
+                                    name="tariff" 
+                                    value="comfort" 
+                                    checked
+                                >
+                                <span class="calc__label-radio">Комфорт</span>
+                            </label>
+                            <label class="calc__wrapper-input calc__wrapper-input-tariff">
+                                <input 
+                                    class="calc__input-radio" 
+                                    type="radio" 
+                                    name="tariff" 
+                                    value="premium"
+                                >
+                                <span class="calc__label-radio">Премиум</span>
+                            </label>
+                        </fieldset>
+
+                        <button class="button calc__submit" type="submit">Рассчитать</button>
+                    </form>
+                </div>
+
+                <div class="calc__total"> <!--Картинка справа-->
+                    <div class="calc__result-wrapper">
+                        <p class="calc__result">
+                            <span class="calc__text">Площадь</span>
+                            <span class="calc__result-text">35 кв м</span>
+                        </p>
+                        <p class="calc__result">
+                            <span class="calc__text">Примерная стоимость</span>
+                            <span class="calc__result-text">42590 руб</span>
+                        </p>
+                    </div>
+                </div>
 
             </div>
         </section>

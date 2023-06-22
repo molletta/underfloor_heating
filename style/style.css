@@ -56,4 +56,6 @@ body {
 .gray-block {
     background: #F8F8F8;
     border-radius: 12px;
+    padding: 50px;
+    min-height: 530px;
 }
